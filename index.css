@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(222, 172, 240);
+    margin: 0;
+}
+
+header{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(139, 89, 158);
+}
+
+h1{   
+    margin: 0;
+    padding-top: 1em;
+    text-align: center;
+}
+
+aside{
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+quote{
+    margin: auto;
+    text-align: center;  
+    font-size: 1.5em;
+}
+
+img{
+    width:15%;
+    border-radius: 50%;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div{
+    min-width: 200px;
+    width: 33%;
+}
+
+h2{
+    text-align: center;
+}
+
+button{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 0;
+    background-color: rgb(47, 36, 46);
+    font-size: 1.6em;
+    color: yellow;
+    position: fixed;
+    bottom: 10px;
+    left : 5px;
+}
+
