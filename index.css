@@ -1,6 +1,7 @@
 body{
     background-color: rgb(222, 172, 240);
     margin: 0;
+    color: rgb(47, 36, 46);
 }
 
 header{
@@ -31,7 +32,8 @@ quote{
 }
 
 img{
-    width:15%;
+    min-width:100px;
+    width:10%;
     border-radius: 50%;
 }
 
@@ -57,9 +59,9 @@ button{
     border: 0;
     background-color: rgb(47, 36, 46);
     font-size: 1.6em;
-    color: yellow;
+    color: rgb(222, 172, 240);
     position: fixed;
     bottom: 10px;
-    left : 5px;
+    left : 10px;
 }
 
