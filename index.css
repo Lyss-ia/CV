@@ -5,11 +5,13 @@ body{
 }
 
 header{
+    text-align: justify;
     height: auto;
     width: 100%;
     margin: 0;
     background-color: rgb(139, 89, 158);
 }
+
 
 h1{   
     margin: 0;
@@ -17,17 +19,26 @@ h1{
     text-align: center;
 }
 
+div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
 aside{
-    margin: 10px;
+    padding: 10px 0px 10px 0px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    outline: solid ;
 }
 
 quote{
     margin: auto;
-    text-align: center;  
+    text-align: center; 
+    font-style: italic; 
     font-size: 1.5em;
 }
 
@@ -41,15 +52,47 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color:rgb(139, 89, 158);
 }
 
-div{
-    min-width: 200px;
+article,address{
+    min-width: 500px;
     width: 33%;
+    text-align: justify;
+    font-size: 1.2em;
 }
 
-h2{
+li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#competences>li{
+    list-style-type: circle;
+}
+
+address{
+    padding: 3% 0% 2% 0%;
     text-align: center;
+}
+
+
+h2,h3{
+    text-align: center;
+}
+
+p{
+    margin-bottom: 0;
+    font-weight: bold ;
+}
+
+a{
+    color: rgb(47, 36, 46);
+}
+
+a:hover{
+    color:rgb(222, 172, 240);
 }
 
 button{
@@ -65,3 +108,36 @@ button{
     left : 10px;
 }
 
+html::-webkit-scrollbar{
+    width:10px;
+    background:rgb(47, 36, 46);
+}
+
+html::-webkit-scrollbar-thumb{
+    background:rgb(222, 172, 240);
+}
+
+@media (max-width:640px) {
+
+    main{
+        width: 100%;
+    }
+    article,address{
+        min-width: 200px;
+        width: 100%;
+    }
+
+    ul{
+        padding: 0em 1em;
+    }
+
+    #competences{
+        padding: 0;
+        padding-left: 1.5em;
+    }
+
+    button{
+        position: static;
+        left:43%;
+    }
+ }
