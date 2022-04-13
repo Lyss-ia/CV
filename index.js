@@ -7,14 +7,14 @@ var fonce="rgb(47, 36, 46)";
 $("img").on("click", function(){
     if(i==0){
         console.log("click");
-        $("img").addClass("click");
+        $("img").addClass("click").css("transition", "width, 2s");
         $("aside").css("height",100+"px");
         i=1;
 
     }
     else{
         
-        $("img").removeClass("click");
+        $("img").removeClass("click").css("transition", "width 2s");
         $("aside").css("height","auto");
         i=0;
     }
@@ -23,6 +23,7 @@ $("img").on("click", function(){
 
 });
 
+
 $("button").on("click",function(){
 
     if(j==0){
@@ -30,9 +31,8 @@ $("button").on("click",function(){
         $("body").css("background-color", moyen).css("color", clair);
         $("header,main").css("background-color",fonce);
         $("button").css("background-color",clair).css("color",fonce).html("☉");
-        $("a").css("color",clair)
+        $("a").css("color",clair);
 
-        
         j=1;
 
     }
