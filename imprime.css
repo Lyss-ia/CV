@@ -1,3 +1,115 @@
-body{
-    background-color: aqua;
+  /* CSS print */
+
+@media print{
+
+      /* Couleur de la police  */
+
+    body{
+        background-color: transparent!important;
+        margin: 0mm!important;
+        color: rgb(47, 36, 46)!important;
+    }
+    
+    /* Haut de la page */
+
+    header{
+        text-align: justify;
+        height: auto;
+        width: 100%;
+        margin: 0%;
+    }
+    
+    
+    h1{   
+        margin: 0;
+        padding-top: 5%!important;
+        text-align: center;
+    }
+
+    address{
+        padding: 3% 0% 2% 0%;
+        text-align: center;
+    }
+
+    /* Image + objectifs */
+
+    aside{
+        padding: 3% 0% 3% 0%!important;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-top: solid;
+        border-bottom: solid;
+        border-color: rgb(139, 89, 158);
+    }
+    
+    quote{
+        margin-top: 1%;
+        text-align: center; 
+        font-style: italic; 
+        font-size: 13pt;
+    }
+    
+    img{
+        width:100px;
+        border-radius: 50%;
+    }
+    
+    /* Contenu du CV */
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    article,address{
+        width: 100%;
+        font-size: 12pt;
+    }
+
+    article{
+        text-align: justify;
+        border-bottom: dotted thin rgb(222, 172, 240);
+    }
+    
+    li{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #competences>li{
+        list-style-type: circle;
+    }
+    
+    h2,h3{
+        text-align: center;
+    }
+    
+    h3{
+        margin: 5% 0%!important;;
+    }
+
+    p{
+        margin-bottom: 0%;
+        font-weight: bold ;
+        break-after: avoid!important;
+    }
+    
+    /* Les liens  */
+
+    a{
+        color: rgb(47, 36, 46);
+        text-decoration: none!important;
+    }
+    
+    /* Plus de bouton  */
+
+    button{
+        display: none!important;
+    }
+    
+
 }
