@@ -1,8 +1,12 @@
+  /* CSS web */
+  /* couleur de fond + police  */
+
 body{
     background-color: rgb(222, 172, 240);
     margin: 0;
     color: rgb(47, 36, 46);
 }
+  /* bannière suppérieure */
 
 header{
     text-align: justify;
@@ -11,7 +15,6 @@ header{
     margin: 0;
     background-color: rgb(139, 89, 158);
 }
-
 
 h1{   
     margin: 0;
@@ -26,8 +29,15 @@ div{
     width: 100%;
 }
 
+address{
+    padding: 3% 0% 2% 0%;
+    text-align: center;
+}
+
+  /* Image + objectif   */
+
 aside{
-    padding: 10px 0px 10px 0px;
+    padding: 10px 0px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -48,6 +58,8 @@ img{
     border-radius: 50%;
 }
 
+  /* Contenu du CV + colonnes header */
+
 main{
     display: flex;
     flex-wrap: wrap;
@@ -58,8 +70,11 @@ main{
 article,address{
     min-width: 500px;
     width: 33%;
-    text-align: justify;
     font-size: 1.2em;
+}
+
+article{
+    text-align: justify;
 }
 
 li{
@@ -72,28 +87,32 @@ li{
     list-style-type: circle;
 }
 
-address{
-    padding: 3% 0% 2% 0%;
+h2,h3{
     text-align: center;
 }
 
-
-h2,h3{
-    text-align: center;
+h3{
+    margin-top:4%;
 }
 
 p{
     margin-bottom: 0;
     font-weight: bold ;
 }
+  /* Les liens  */
 
 a{
     color: rgb(47, 36, 46);
+    transition: 2s;
 }
 
 a:hover{
     color:rgb(222, 172, 240);
+    text-shadow: 1px 0 10px white;
+    transition: 2s;
 }
+
+  /* Mode sombre  */
 
 button{
     height: 70px;
@@ -117,6 +136,8 @@ button{
     top:20%;
 }
 
+  /* Les ombres  */
+
 button,img,header{
     box-shadow:5px 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -124,6 +145,8 @@ button,img,header{
 main{
     box-shadow:5px -10px 20px rgba(0, 0, 0, 0.2)
 }
+
+  /* Une jolie scrollbar  */
 
 html::-webkit-scrollbar{
     width:10px;
@@ -133,6 +156,8 @@ html::-webkit-scrollbar{
 html::-webkit-scrollbar-thumb{
     background:rgb(222, 172, 240);
 }
+
+  /* Version mobile  */
 
 @media (max-width:640px) {
 
