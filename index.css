@@ -4,8 +4,9 @@
 body{
     background-color: rgb(222, 172, 240);
     margin: 0;
-    color: rgb(47, 36, 46);
+    color: rgb(24, 19, 24);
 }
+
   /* bannière suppérieure */
 
 header{
@@ -17,9 +18,13 @@ header{
 }
 
 h1{   
-    margin: 0;
-    padding-top: 1em;
+    margin: auto;
+    padding-top: 1.5em;
     text-align: center;
+}
+
+h2{
+    margin-bottom:0;
 }
 
 div{
@@ -112,7 +117,7 @@ a:hover{
     transition: 2s;
 }
 
-  /* Mode sombre  */
+  /* Bouton mode sombre  */
 
 button{
     height: 70px;
@@ -150,7 +155,7 @@ main{
 
 html::-webkit-scrollbar{
     width:10px;
-    background:rgb(47, 36, 46);
+    background: rgb(47, 36, 46);
 }
 
 html::-webkit-scrollbar-thumb{

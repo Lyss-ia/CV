@@ -3,6 +3,7 @@ var j=0;
 var clair="rgb(222, 172, 240)";
 var moyen="rgb(139, 89, 158)";
 var fonce="rgb(47, 36, 46)";
+var fonce2="rgb(24, 19, 24)";
 
 $("img").on("click", function(){
     if(i==0){
@@ -38,7 +39,7 @@ $("button").on("click",function(){
     }
     else{
         
-        $("body").css("background-color", clair).css("color",fonce)
+        $("body").css("background-color", clair).css("color",fonce2);
         $("header,main").css("background-color",moyen);
         $("button").css("background-color",fonce).css("color",clair).html("☽");
         $("a").css("color",fonce)
