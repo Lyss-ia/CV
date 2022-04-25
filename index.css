@@ -92,6 +92,10 @@ li{
     list-style-type: circle;
 }
 
+#competences>h3{
+    text-align: left;
+}
+
 h2,h3{
     text-align: center;
 }
