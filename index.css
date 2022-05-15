@@ -185,8 +185,8 @@ a.bubulle{
     position: absolute;
     width: 100px;
     opacity: 0.9;
-    bottom: -1em;
-    left: 31.5em;
+    top: 90%;
+    left: 50%;
     border-radius: 5px;
     transform: translateX(-50%);
     z-index: 1; 
