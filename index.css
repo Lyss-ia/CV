@@ -23,7 +23,7 @@ h1{
     text-align: center;
 }
 
-h2{
+#bub{
     margin-bottom:0;
     position: relative;
 }
@@ -106,6 +106,7 @@ li{
 
 h2,h3{
     text-align: center;
+    margin-bottom:0;
 }
 
 h3{
@@ -150,7 +151,7 @@ button{
     position:fixed;
     max-width: 600px;
     min-width: 250px;
-    top:20%;
+    top:10%;
 }
 
   /* Les ombres  */
