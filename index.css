@@ -25,6 +25,7 @@ h1{
 
 h2{
     margin-bottom:0;
+    position: relative;
 }
 
 div{
@@ -122,7 +123,7 @@ a{
     transition: 2s;
 }
 
-a:hover{
+a:not(.bubulle):hover{
     color:rgb(222, 172, 240);
     text-shadow: 1px 0 10px white;
     transition: 2s;
@@ -172,6 +173,28 @@ html::-webkit-scrollbar{
 html::-webkit-scrollbar-thumb{
     background:rgb(222, 172, 240);
 }
+
+a.bubulle{
+   text-decoration: none;
+}
+
+.bubulle:hover:after,
+.bubulle:focus:after {
+    content: attr(aria-label); 
+    position: absolute;
+    width: 100px;
+    opacity: 0.9;
+    bottom: -1em;
+    left: 31.5em;
+    border-radius: 5px;
+    transform: translateX(-50%);
+    z-index: 1; 
+    white-space: nowrap; 
+    background-color: rgb(24, 19, 24);
+    color: rgb(222, 172, 240);
+}
+
+
 
   /* Version mobile  */
 

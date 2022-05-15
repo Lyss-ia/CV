@@ -53,3 +53,12 @@ $("button").on("click",function(){
     }
     
 })
+
+    // Date d'anniversaire
+
+    function calculerAge(anniv = "2000-10-31") {
+        const annif = new Date(anniv);
+        return Math.abs(new Date(Date.now() - annif.getTime()).getUTCFullYear() - 1970);
+    }
+    
+    $(".bubulle").attr("aria-label", calculerAge() + " ans");
