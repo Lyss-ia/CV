@@ -31,13 +31,10 @@
         text-align: center!important;
     }
 
-    svg{
-        visibility:hidden!important;
-    }
-
     /* Image + objectifs */
 
     aside{
+        margin: 0;
         padding: 3% 0% 3% 0%!important;
         width: 100%;
         display: flex;
@@ -88,12 +85,13 @@
         list-style-type: circle;
     }
     
-    h2,h3{
+    h2{
         text-align: center;
     }
     
     h3{
-        margin: 5% 0%!important;;
+        margin: 2.5% 0%!important;
+        text-align: justify;
     }
 
     p{
@@ -109,9 +107,9 @@
         text-decoration: none!important;
     }
     
-    /* Plus de bouton  */
+    /* Plus de bouton et de réseaux sociaux */
 
-    button{
+    button,svg{
         display: none!important;
     }
     
