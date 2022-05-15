@@ -28,7 +28,11 @@
 
     address{
         padding: 3% 0% 2% 0%;
-        text-align: center;
+        text-align: center!important;
+    }
+
+    svg{
+        visibility:hidden!important;
     }
 
     /* Image + objectifs */
@@ -45,7 +49,7 @@
     }
     
     quote{
-        margin-top: 1%;
+        margin-top: 2em;
         text-align: center; 
         font-style: italic; 
         font-size: 13pt;

@@ -34,6 +34,11 @@ div{
     width: 100%;
 }
 
+svg{
+    margin: 0.5em;
+    color:rgb(24, 19, 24);
+}
+
 address{
     padding: 3% 0% 2% 0%;
     text-align: center;
@@ -48,6 +53,7 @@ aside{
     flex-wrap: wrap;
     justify-content: center;
     outline: solid ;
+    overflow: hidden;
 }
 
 quote{
@@ -61,6 +67,7 @@ img{
     min-width:100px;
     width:10%;
     border-radius: 50%;
+    cursor: pointer;
 }
 
   /* Contenu du CV + colonnes header */
