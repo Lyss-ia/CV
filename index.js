@@ -10,6 +10,7 @@ var fonce2="rgb(24, 19, 24)";
 //Agrandir l'image de profil
 
 $("img").on("click", function(){
+
     if(i==0){
         console.log("click");
         $("img").addClass("click").css("transition", "width, 2s");
@@ -47,7 +48,7 @@ $("button").on("click",function(){
         $("body").css("background-color", clair).css("color",fonce2);
         $("header,main").css("background-color",moyen);
         $("button").css("background-color",fonce).css("color",clair).html("☽");
-        $("a,svg").css("color",fonce)
+        $("a,svg").css("color",fonce2)
 
         j=0;
     }
