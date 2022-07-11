@@ -7,7 +7,7 @@ moyen="rgb(139, 89, 158)";
 fonce="rgb(47, 36, 46)";
 fonce2="rgb(24, 19, 24)";
 image = document.querySelector("img");
-aside = document.querySelector("aside");
+note = document.querySelector("aside");
 bouton = document.querySelector("button");
 corps = document.querySelector("body");
 entete = document.querySelectorAll("header, main");
@@ -22,7 +22,7 @@ image.onclick = function(){
  
         image.classList.add("click")
         image.style.transition = "width, 2s";
-        aside.style.height=150 + "px";
+        note.style.height=150 + "px";
         i=1;
 
     }
