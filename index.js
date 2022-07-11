@@ -6,60 +6,94 @@ clair="rgb(222, 172, 240)";
 moyen="rgb(139, 89, 158)";
 fonce="rgb(47, 36, 46)";
 fonce2="rgb(24, 19, 24)";
+image = document.querySelector("img");
+aside = document.querySelector("aside");
+bouton = document.querySelector("button");
+corps = document.querySelector("body");
+entete = document.querySelectorAll("header, main");
+lien = document.querySelectorAll("a, svg");
+      
 
 //Agrandir l'image de profil
 
-$("img").on("click", function(){
+image.onclick = function(){
 
     if(i==0){
  
-        $("img").addClass("click").css("transition", "width, 2s");
-        $("aside").css("height",150+"px");
+        image.classList.add("click")
+        image.style.transition = "width, 2s";
+        aside.style.height=150 + "px";
         i=1;
 
     }
     else{
         
-        $("img").removeClass("click").css("transition", "width 2s");
-        // $("aside").css("height","auto");
+        image.classList.remove("click")
+        image.style.transition = "width, 2s";
         i=0;
     }
     
 
 
-});
+};
 
 //Mode sombre 
 
-$("button").on("click",function(){
+bouton.onclick = function(){
 
     if(j==0){
 
-        $("body").css("background-color", moyen).css("color", clair);
-        $("header,main").css("background-color",fonce);
-        $("button").css("background-color",clair).css("color",fonce).html("☉");
-        $("a,svg").css("color",clair);
+        corps.style.backgroundColor = moyen;
+        corps.style.color = clair;
+        bouton.style.backgroundColor = clair;
+        bouton.style.color = fonce;
+        bouton.innerText = "☉" ;
+
+        for(m=0; m<entete.length; m++){
+
+            entete[m].style.backgroundColor = fonce;
+        }
+
+        for(n=0; n<lien.length; n++){
+
+            lien[n].style.color = clair;
+            
+        }
 
         j=1;
 
     }
     else{
         
-        $("body").css("background-color", clair).css("color",fonce2);
-        $("header,main").css("background-color",moyen);
-        $("button").css("background-color",fonce).css("color",clair).html("☽");
-        $("a,svg").css("color",fonce2)
+        corps.style.backgroundColor = clair;
+        corps.style.color = fonce2;
+        bouton.style.backgroundColor = fonce;
+        bouton.style.color = clair;
+        bouton.innerText = "☽";
+
+   
+        for(m=0; m<entete.length; m++){
+
+            entete[m].style.backgroundColor = moyen;
+        }
+
+
+        for(n=0; n<lien.length; n++){
+
+            lien[n].style.color = fonce2;
+            
+        }
 
         j=0;
     }
     
-})
+};
 
     // Date d'anniversaire
 
     function calculerAge(anniv = "2000-10-31") {
         const annif = new Date(anniv);
         return Math.abs(new Date(Date.now() - annif.getTime()).getUTCFullYear() - 1970);
-    }
+    };
     
     $(".bubulle").attr("aria-label", calculerAge() + " ans");
