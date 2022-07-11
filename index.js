@@ -1,18 +1,18 @@
 //Variables
 
-var i=0;
-var j=0;
-var clair="rgb(222, 172, 240)"; 
-var moyen="rgb(139, 89, 158)";
-var fonce="rgb(47, 36, 46)";
-var fonce2="rgb(24, 19, 24)";
+i=0;
+j=0;
+clair="rgb(222, 172, 240)"; 
+moyen="rgb(139, 89, 158)";
+fonce="rgb(47, 36, 46)";
+fonce2="rgb(24, 19, 24)";
 
 //Agrandir l'image de profil
 
 $("img").on("click", function(){
 
     if(i==0){
-        console.log("click");
+ 
         $("img").addClass("click").css("transition", "width, 2s");
         $("aside").css("height",150+"px");
         i=1;
@@ -34,7 +34,7 @@ $("img").on("click", function(){
 $("button").on("click",function(){
 
     if(j==0){
-        console.log("click");
+
         $("body").css("background-color", moyen).css("color", clair);
         $("header,main").css("background-color",fonce);
         $("button").css("background-color",clair).css("color",fonce).html("☉");
