@@ -33,8 +33,6 @@ image.onclick = function(){
         i=0;
     }
     
-
-
 };
 
 //Mode sombre 
