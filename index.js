@@ -94,4 +94,4 @@ bouton.onclick = function(){
         return Math.abs(new Date(Date.now() - annif.getTime()).getUTCFullYear() - 1970);
     };
     
-    $(".bubulle").attr("aria-label", calculerAge() + " ans");
+    bulle = document.querySelector(".bubulle").setAttribute("aria-label", calculerAge() + " ans");
