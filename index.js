@@ -2,16 +2,16 @@
 
 i=0;
 j=0;
-clair="rgb(222, 172, 240)"; 
-moyen="rgb(139, 89, 158)";
-fonce="rgb(47, 36, 46)";
-fonce2="rgb(24, 19, 24)";
-image = document.querySelector("img");
-note = document.querySelector("aside");
-bouton = document.querySelector("button");
-corps = document.querySelector("body");
-entete = document.querySelectorAll("header, main");
-lien = document.querySelectorAll("a, svg");
+let clair="rgb(222, 172, 240)"; 
+let moyen="rgb(139, 89, 158)";
+let fonce="rgb(47, 36, 46)";
+let fonce2="rgb(24, 19, 24)";
+let image = document.querySelector("img");
+let note = document.querySelector("aside");
+let bouton = document.querySelector("button");
+let corps = document.querySelector("body");
+let entete = document.querySelectorAll("header, main");
+let lien = document.querySelectorAll("a, svg");
       
 
 //Agrandir l'image de profil
@@ -94,4 +94,4 @@ bouton.onclick = function(){
         return Math.abs(new Date(Date.now() - annif.getTime()).getUTCFullYear() - 1970);
     };
     
-    bulle = document.querySelector(".bubulle").setAttribute("aria-label", calculerAge() + " ans");
+    let bulle = document.querySelector(".bubulle").setAttribute("aria-label", calculerAge() + " ans");
