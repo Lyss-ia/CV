@@ -22,7 +22,7 @@ image.onclick = function(){
  
         image.classList.add("click")
         image.style.transition = "width, 2s";
-        note.style.height=150 + "px";
+        note.style.height="auto";
         i=1;
 
     }
