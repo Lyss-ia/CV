@@ -71,7 +71,7 @@ bouton.onclick = function(){
         corps.style.color = fonce2;
         note.style.outlineColor = fonce2;
         bouton.style.backgroundColor = fonce;
-        bouton.style.color = clair;
+        bouton.style.color = lila;
         bouton.innerText = "☽";
 
    

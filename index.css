@@ -14,7 +14,7 @@ header{
     height: auto;
     width: 100%;
     margin: 0;
-    background-color: #C5A3E6
+    background-color: rgb(197,163,230);
 }
 
 h1{   
@@ -79,7 +79,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color:#C5A3E6
+    background-color:rgb(197,163,230);
 }
 
 article,address{
@@ -119,7 +119,6 @@ a{
 }
 
 a:not(.bubulle):hover{
-    color:rgb(222, 172, 240);
     text-shadow: 1px 0 10px white;
     transition: 2s;
 }
@@ -134,7 +133,7 @@ button{
     border: 0;
     background-color: rgb(47, 36, 46);
     font-size: 1.6em;
-    color: rgb(222, 172, 240);
+    color: rgb(197,163,230);
     position: fixed;
     bottom: 10px;
     left : 10px;
