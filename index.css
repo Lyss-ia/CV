@@ -60,6 +60,7 @@ aside{
     justify-content: center;
     outline: solid ;
     overflow: hidden;
+    box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.2), inset 0px -5px 5px rgba(0, 0, 0, 0.2);
 }
 
 quote{
