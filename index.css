@@ -1,10 +1,13 @@
   /* CSS web */
   /* couleur de fond + police  */
+  @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 body{
     background-color: rgb(222, 172, 240);
     margin: 0;
     color: rgb(24, 19, 24);
+    font-family: 'Inconsolata', monospace;
+    word-spacing: -0.2em;
 }
 
   /* bannière suppérieure */
@@ -66,7 +69,7 @@ quote{
     font-size: 1.5em;
 }
 
-img{
+aside img{
     min-width:100px;
     width:10%;
     border-radius: 50%;
@@ -98,13 +101,18 @@ li{
     padding: 0;
 }
 
+li img{
+    width: 50px;
+    height: 50px;
+}
+
 h2,h3{
     text-align: center;
     margin-bottom:0;
 }
 
 h3{
-    margin-top:4%;
+    margin : 1em 0;
 }
 
 p{
@@ -115,12 +123,12 @@ p{
 
 a{
     color: rgb(24, 19, 24);;
-    transition: 2s;
+    transition: text-shadow 2s;
 }
 
 a:not(.bubulle):hover{
     text-shadow: 1px 0 10px white;
-    transition: 2s;
+    transition: text-shadow 2s;
 }
 
   /* Bouton mode sombre  */

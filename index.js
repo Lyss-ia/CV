@@ -15,6 +15,12 @@ const entete = document.querySelectorAll("header, main");
 const lien = document.querySelectorAll("a, svg");
       
 
+if(localStorage.getItem("theme")=="clair"){
+    j=1;
+}
+else{
+    j=0;
+}
 //Agrandir l'image de profil
 
 image.onclick = function(){
@@ -38,7 +44,7 @@ image.onclick = function(){
 
 //Mode sombre 
 
-bouton.onclick = function(){
+const changertheme = function(){
 
     if(j==0){
 
@@ -49,22 +55,23 @@ bouton.onclick = function(){
         bouton.style.backgroundColor = clair;
         bouton.style.color = fonce;
         bouton.innerText = "☉" ;
+        localStorage.setItem("theme", "sombre");
         
+        for (const iterateur of entete) {
 
-        for(m=0; m<entete.length; m++){
-
-            entete[m].style.backgroundColor = fonce;
+            iterateur.style.backgroundColor = fonce;
+            
         }
 
-        for(n=0; n<lien.length; n++){
+        for (const iterateur of lien) {
 
-            lien[n].style.color = clair;
-            
+            iterateur.style.color = clair;
         }
 
         j=1;
 
     }
+
     else{
         
         corps.style.backgroundColor = clair;
@@ -73,17 +80,16 @@ bouton.onclick = function(){
         bouton.style.backgroundColor = fonce;
         bouton.style.color = lila;
         bouton.innerText = "☽";
+        localStorage.setItem("theme", "clair");
 
-   
-        for(m=0; m<entete.length; m++){
+        for (const iterateur of entete) {
 
-            entete[m].style.backgroundColor = lila;
+            iterateur.style.backgroundColor = lila;
         }
 
+        for (const iterateur of lien) {
 
-        for(n=0; n<lien.length; n++){
-
-            lien[n].style.color = fonce2;
+            iterateur.style.color = fonce2;
             
         }
 
@@ -91,6 +97,9 @@ bouton.onclick = function(){
     }
     
 };
+
+bouton.onclick = changertheme;
+changertheme()
 
     // Date d'anniversaire
 
