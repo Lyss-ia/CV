@@ -1,17 +1,18 @@
 //Variables
 
-i=0;
-j=0;
-let clair="rgb(222, 172, 240)"; 
-let moyen="rgb(139, 89, 158)";
-let fonce="rgb(47, 36, 46)";
-let fonce2="rgb(24, 19, 24)";
-let image = document.querySelector("img");
-let note = document.querySelector("aside");
-let bouton = document.querySelector("button");
-let corps = document.querySelector("body");
-let entete = document.querySelectorAll("header, main");
-let lien = document.querySelectorAll("a, svg");
+let i=0;
+let j=0;
+const clair="rgb(222, 172, 240)"; 
+const moyen="rgb(139, 89, 158)";
+const fonce="rgb(47, 36, 46)";
+const fonce2="rgb(24, 19, 24)";
+const lila = "rgb(197,163,230)";
+const image = document.querySelector("img");
+const note = document.querySelector("aside");
+const bouton = document.querySelector("button");
+const corps = document.querySelector("body");
+const entete = document.querySelectorAll("header, main");
+const lien = document.querySelectorAll("a, svg");
       
 
 //Agrandir l'image de profil
@@ -43,9 +44,12 @@ bouton.onclick = function(){
 
         corps.style.backgroundColor = moyen;
         corps.style.color = clair;
+        note.style.color = fonce;
+        note.style.outlineColor = clair;
         bouton.style.backgroundColor = clair;
         bouton.style.color = fonce;
         bouton.innerText = "☉" ;
+        
 
         for(m=0; m<entete.length; m++){
 
@@ -65,6 +69,7 @@ bouton.onclick = function(){
         
         corps.style.backgroundColor = clair;
         corps.style.color = fonce2;
+        note.style.outlineColor = fonce2;
         bouton.style.backgroundColor = fonce;
         bouton.style.color = clair;
         bouton.innerText = "☽";
@@ -72,7 +77,7 @@ bouton.onclick = function(){
    
         for(m=0; m<entete.length; m++){
 
-            entete[m].style.backgroundColor = moyen;
+            entete[m].style.backgroundColor = lila;
         }
 
 
