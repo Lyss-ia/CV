@@ -51,7 +51,7 @@ const changertheme = function(){
         corps.style.backgroundColor = moyen;
         corps.style.color = clair;
         note.style.color = fonce;
-        note.style.outlineColor = clair;
+        note.style.outlineColor = lila;
         bouton.style.backgroundColor = clair;
         bouton.style.color = fonce;
         bouton.innerText = "☉" ;
@@ -99,13 +99,13 @@ const changertheme = function(){
 };
 
 bouton.onclick = changertheme;
-changertheme()
+changertheme();
 
-    // Date d'anniversaire
+// Date d'anniversaire
 
-    function calculerAge(anniv = "2000-10-31") {
-        const annif = new Date(anniv);
-        return Math.abs(new Date(Date.now() - annif.getTime()).getUTCFullYear() - 1970);
-    };
-    
-    let bulle = document.querySelector(".bubulle").setAttribute("aria-label", calculerAge() + " ans");
+function calculerAge(anniv = "2000-10-31") {
+    const annif = new Date(anniv);
+    return Math.abs(new Date(Date.now() - annif.getTime()).getUTCFullYear() - 1970);
+};
+
+let bulle = document.querySelector(".bubulle").setAttribute("aria-label", calculerAge() + " ans");
