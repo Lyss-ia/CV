@@ -51,7 +51,7 @@ const changertheme = function(){
         corps.style.backgroundColor = moyen;
         corps.style.color = clair;
         note.style.color = fonce;
-        note.style.outlineColor = lila;
+        note.style.outlineColor = clair;
         bouton.style.backgroundColor = clair;
         bouton.style.color = fonce;
         bouton.innerText = "☉" ;
@@ -77,7 +77,7 @@ const changertheme = function(){
         corps.style.backgroundColor = clair;
         corps.style.color = fonce2;
         note.style.outlineColor = fonce2;
-        bouton.style.backgroundColor = fonce;
+        bouton.style.backgroundColor = fonce2;
         bouton.style.color = lila;
         bouton.innerText = "☽";
         localStorage.setItem("theme", "clair");

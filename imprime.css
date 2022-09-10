@@ -109,7 +109,7 @@
     
     /* Plus de bouton et de réseaux sociaux */
 
-    button,svg{
+    button, address svg{
         display: none!important;
     }
     
