@@ -116,7 +116,7 @@ h3{
     margin : 1em 0;
 }
 
-p{
+.title{
     margin-bottom: 0;
     font-weight: bold ;
 }
@@ -178,12 +178,12 @@ html::-webkit-scrollbar-thumb{
     background: rgb(197,163,230);
 }
 
-a.bubulle{
+a.bubble{
    text-decoration: none;
 }
 
-.bubulle:hover:after,
-.bubulle:focus:after {
+.bubble:hover:after,
+.bubble:focus:after {
     content: attr(aria-label); 
     position: absolute;
     width: 100px;
