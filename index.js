@@ -21,7 +21,7 @@ if(localStorage.getItem("theme")=="day"){
 else{
     j=0;
 }
-//Agrandir l'image de profil
+//Make the picture bigger
 
 image.onclick = function(){
 
@@ -42,7 +42,7 @@ image.onclick = function(){
     
 };
 
-//Mode sombre 
+//Dark mode  
 
 const changetheme = function(){
 
@@ -101,7 +101,7 @@ const changetheme = function(){
 button.onclick = changetheme;
 changetheme();
 
-// Date d'anniversaire
+// birthday calculator
 
 function calculateAge(anniv = "2000-10-31") {
     const anniversary = new Date(anniv);

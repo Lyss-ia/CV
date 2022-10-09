@@ -2,7 +2,7 @@
 
 @media print{
 
-      /* Couleur de la police  */
+      /* Font color  */
 
     body{
         background-color: transparent!important;
@@ -10,7 +10,7 @@
         color: rgb(47, 36, 46)!important;
     }
     
-    /* Haut de la page */
+    /* head of the page */
 
     header{
         text-align: justify;
@@ -31,7 +31,7 @@
         text-align: center!important;
     }
 
-    /* Image + objectifs */
+    /* Image + goals */
 
     aside{
         margin: 0;
@@ -57,7 +57,7 @@
         border-radius: 50%;
     }
     
-    /* Contenu du CV */
+    /* CV content */
 
     main{
         display: flex;
@@ -100,14 +100,14 @@
         break-after: avoid!important;
     }
     
-    /* Les liens  */
+    /* Links  */
 
     a{
         color: rgb(47, 36, 46);
         text-decoration: none!important;
     }
     
-    /* Plus de bouton et de réseaux sociaux */
+    /* no more social networks buttons */
 
     button, address svg{
         display: none!important;

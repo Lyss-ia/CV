@@ -1,5 +1,5 @@
   /* CSS web */
-  /* couleur de fond + police  */
+  /* background color + font  */
   @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 body{
@@ -10,7 +10,7 @@ body{
     word-spacing: -0.2em;
 }
 
-  /* bannière suppérieure */
+  /* banneer */
 
 header{
     text-align: justify;
@@ -48,7 +48,7 @@ address{
     text-align: center;
 }
 
-  /* Image + objectif   */
+  /* Image + goals   */
 
 aside{
     background-image: url("./images/fond.jpg");
@@ -78,7 +78,7 @@ aside img{
     cursor: pointer;
 }
 
-  /* Contenu du CV + colonnes header */
+  /* CV content + header columns */
 
 main{
     display: flex;
@@ -121,7 +121,7 @@ h3{
     margin-bottom: 0;
     font-weight: bold ;
 }
-  /* Les liens  */
+  /* Links  */
 
 a{
     color: rgb(24, 19, 24);;
@@ -133,7 +133,7 @@ a:not(.bubulle):hover{
     transition: text-shadow 2s;
 }
 
-  /* Bouton mode sombre  */
+  /* Dark mode button  */
 
 button{
     cursor: pointer;
@@ -158,7 +158,7 @@ button{
     top:10%;
 }
 
-  /* Les ombres  */
+  /* Shadows  */
 
 button,img,header{
     box-shadow:5px 10px 20px rgba(0, 0, 0, 0.2);
@@ -168,7 +168,7 @@ main{
     box-shadow:5px -10px 20px rgba(0, 0, 0, 0.2)
 }
 
-  /* Une jolie scrollbar + info bulle */
+  /* beautiful scrollbar + information in a bubble */
 
 html::-webkit-scrollbar{
     width:10px;
@@ -199,9 +199,7 @@ a.bubble{
     color: rgb(222, 172, 240);
 }
 
-
-
-  /* Version mobile  */
+  /* Mobile version  */
 
 @media (max-width:640px) {
 
